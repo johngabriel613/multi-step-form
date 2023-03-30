@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi step form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <section id="signup">
+        <form action="#" method="POST" class="form">
+            <div class="progress">
+                <div class="progress-bar active current">
+                    <span>
+                        <img src="assets/email.svg" alt="">
+                    </span>
+                </div>
+                <div class="progress-bar">
+                    <span>
+                        <img src="assets/user.svg" alt="">
+                    </span>
+                </div>
+                <div class="progress-bar ">
+                    <span>
+                        <img src="assets/password.svg" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="pages">
+                <div class="page active">
+                    <h1>Let's get started</h1>
+                    <div class="field">
+                        <div class="field-input">
+                            <label for="email"><span>*</span>Email</label>
+                            <input type="email" id="email" placeholder="e.g. sample@email.com">
+                        </div>
+                        <div class="field-input">
+                            <label for="uname"><span>*</span>Username</label>
+                            <input type="text" id="uname" placeholder="e.g. gab613">
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button type="button" id="next-btn">
+                            <img src="assets/next.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="page">
+                    <h1>Add a personal touch</h1>
+                    <div class="field">
+                        <div class="field-input">
+                            <div class="field-group">
+                                <div class="fname-input">
+                                    <label for="fname"><span>*</span>First Name</label>
+                                    <input type="text" id="fname" placeholder="e.g. John">
+                                </div>
+                                <div class="lname-input">
+                                    <label for="fname"><span>*</span>Last Name</label>
+                                    <input type="text" id="fname" placeholder="e.g. Doe">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field-input">
+                            <label for="bdate"><span>*</span>Birthdate</label>
+                            <input type="date" id="bdate">
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button type="button" id="prev-btn">
+                            <img src="assets/prev.svg" alt="">
+                        </button>
+                        <button type="button" id="next-btn">
+                            <img src="assets/next.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="page">
+                    <h1>Secure your account</h1>
+                    <div class="field">
+                        <div class="field-input">
+                            <label for="password"><span>*</span>Password</label>
+                            <input type="password" id="password" placeholder="Password">
+                            <img class="show-hide-pass" src="/assets/show-pass.svg" alt="">
+                        </div>
+                        <div class="field-input">
+                            <label for="confirmpass"><span>*</span>Confirm Password</label>
+                            <input type="password" id="confirmpass" placeholder="Confirm Password">
+                            <img class="show-hide-pass" src="/assets/show-pass.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button type="button" id="prev-btn">
+                            <img src="assets/prev.svg" alt="">
+                        </button>
+                        <button type="submit" id="submit-btn">
+                            Sign up
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
